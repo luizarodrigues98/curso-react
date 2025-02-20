@@ -7,20 +7,20 @@ function App() {
     JSON.parse(localStorage.getItem("tasks") || [])
   );
 
-  useEffect(() => {
-    async function fetchTasks() {
-      try {
-        const response = await fetch("http://localhost:3000/api/v1/tasks", {
-          method: "GET",
-        });
-        const data = await response.json();
-        setTasks(data);
-      } catch (error) {
-        console.error("Erro ao buscar tarefas:", error);
-      }
-    }
-    fetchTasks();
-  }, []);
+  // useEffect(() => {
+  //   async function fetchTasks() {
+  //     try {
+  //       const response = await fetch("http://localhost:3000/api/v1/tasks", {
+  //         method: "GET",
+  //       });
+  //       const data = await response.json();
+  //       setTasks(data);
+  //     } catch (error) {
+  //       console.error("Erro ao buscar tarefas:", error);
+  //     }
+  //   }
+  //   fetchTasks();
+  // }, []);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
