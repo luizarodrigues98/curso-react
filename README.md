@@ -1,8 +1,39 @@
-# React + Vite
+Projeto de lista de tarefas com React, Vite, TailwindCSS e LocalStorage.
+https://curso-react-one-topaz.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Instalação
 
-Currently, two official plugins are available:
+```bash
+npm install
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Iniciar o projeto
+
+```bash
+npm run dev
+```
+
+## Estrutura do projeto
+
+```bash
+src/
+├── App.jsx
+├── components/
+└── styles/
+```
+
+## Tecnologias utilizadas
+
+- React
+- Vite
+- TailwindCSS
+- LocalStorage
+
+## Funcionalidades
+
+- Adicionar tarefas
+- Marcar tarefas como concluídas
+- Excluir tarefas
+- Ver detalhes da tarefa
+
+Pode ser acessado em: https://curso-react-one-topaz.vercel.app/
